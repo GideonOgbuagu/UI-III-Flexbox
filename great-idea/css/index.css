@@ -67,26 +67,26 @@ h1, h2, h3, h4, h5 {
 
 .container {
 	width: 90%;
-  margin: 0 auto;
+	margin: 0 auto;
+
   }
 
 nav {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin-top: 10%;
+	width: 100%;
 }
 
-.nav-wrap{
-	width: 12%;	
+nav .nav-wrap{	
 	display: flex;
+	justify-content: space-between;
 	position: relative;
-	left: -12%;
-	
+	width: 60%;	
 }
 nav div a {
 	color: grey;
 	text-decoration: none;
-	padding: 0 18%;
 
 }
 
@@ -95,44 +95,59 @@ nav div a {
 	justify-content: center;
 	/* justify-content: space-around; */
 	margin-top: 10%;
+	margin-bottom: 8%;
 }
 .head-info1 {
 	margin-right: 10%;
 	text-align: center;
+	margin-top: 7%;
 }
 .head-info1 h1 {
 	font-size: 500%;
 	text-align: center;
+	line-height: 80%;
+}
+.head-info1 h1:nth-child(3) {
+	color: red;
+	margin-bottom: 30px;
 }
 .head-info1 a {
 	border: 1px solid black;
-	display: inline-block;
 	padding: 2% 12%;
 	text-decoration: none;
 	color: black;
   }
 
+  .head-info1 img {
+	  width: 113%;
+  }
+
   .section-wrap1 {
+	  max-width: 100%;
 	  display: flex;
 	  flex-direction: row;
 	  padding: 3% 0;
   }
   
   .middle-img {
-	  width: 100%
+	  width: 100%;
   }
 
  .section-wrap2 {
 	 display: flex;
+	 justify-content: space-between;
 	 padding: 3% 0;
  }
  
  .section-wrap2 .third {
-	width: 33%
+	width: 32%;
  }
 
  .address {
 	 padding: 4% 0;
+ }
+ address p {
+	 line-height: 150%;
  }
  footer {
 	display: flex;
